@@ -15,9 +15,27 @@ function Footer({ darkMode }) {
         </h2>
 
         <div className="flex items-center gap-4">
-          <SocialIcon network="facebook" />
-          <SocialIcon network="youtube" />
-          <SocialIcon network="github" />
+          <a 
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <SocialIcon network="youtube" />
+          </a>
+          <a 
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <SocialIcon network="facebook" />
+          </a>
+          <a 
+            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" 
+            target="_blank" 
+            rel="noopener noreferrer"
+          >
+            <SocialIcon network="github" />
+          </a>
         </div>
       </div>
 

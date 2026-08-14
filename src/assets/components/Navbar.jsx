@@ -16,21 +16,21 @@ function Navbar({ darkMode, toggleDarkMode }) {
       {/* Navigation */}
       <div className="flex items-center gap-8 text-sm font-medium">
         <a
-          href="#"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1"
           className="transition duration-200 hover:text-blue-400"
         >
           Home
         </a>
 
         <a
-          href="#"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1"
           className="transition duration-200 hover:text-blue-400"
         >
           About
         </a>
 
         <a
-          href="#"
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1"
           className="transition duration-200 hover:text-blue-400"
         >
           Contact
