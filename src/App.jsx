@@ -26,7 +26,7 @@ function Display() {
         <div className="mx-auto max-w-4xl">
 
           <h1 className="text-5xl font-bold tracking-tight">
-            Hey, I'm Mahi 👋
+            Hey, I'm Mahi 
           </h1>
 
           <p
@@ -47,7 +47,7 @@ function Display() {
               }
               className="rounded-xl bg-blue-600 px-6 py-3 font-semibold text-white shadow-lg transition-all duration-200 hover:-translate-y-1 hover:bg-blue-500 hover:shadow-xl active:translate-y-0"
             >
-              🚀 View Projects
+               View Projects
             </button>
 
             <button
@@ -63,7 +63,7 @@ function Display() {
                   : "border-gray-300 bg-white text-black hover:bg-gray-100"
               }`}
             >
-              🐙 GitHub
+               GitHub
             </button>
           </div>
 
@@ -110,7 +110,7 @@ function Display() {
                 }`}
               >
                 <h3 className="text-xl font-bold">
-                  🤖 ML Country Guesser
+                   ML Country Guesser
                 </h3>
 
                 <p className="mt-2 text-sm opacity-70">
@@ -126,7 +126,7 @@ function Display() {
                 }`}
               >
                 <h3 className="text-xl font-bold">
-                  ⚛️ React Page
+                   React Page
                 </h3>
 
                 <p className="mt-2 text-sm opacity-70">
@@ -142,7 +142,7 @@ function Display() {
                 }`}
               >
                 <h3 className="text-xl font-bold">
-                  📐 Manim Animation
+                   Manim Animation
                 </h3>
 
                 <p className="mt-2 text-sm opacity-70">

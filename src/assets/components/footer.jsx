@@ -30,7 +30,7 @@ function Footer({ darkMode }) {
             <SocialIcon network="facebook" />
           </a>
           <a 
-            href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&themeRefresh=1" 
+            href="https://github.com/mahiseifu2013-cloud/react" 
             target="_blank" 
             rel="noopener noreferrer"
           >

@@ -40,7 +40,7 @@ function Navbar({ darkMode, toggleDarkMode }) {
           onClick={toggleDarkMode}
           className="rounded-lg px-3 py-2 transition duration-200 hover:bg-blue-500 hover:text-white"
         >
-          {darkMode ? "☀️ Light mode" : "🌙 Dark mode"}
+          {darkMode ? " Light mode" : " Dark mode"}
         </button>
       </div>
 
