@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Nav({ onToggleForm, isFormVisible, darkMode, toggleDarkMode }) {
+function Nav({ onToggleForm, isFormVisible, darkMode, toggleDarkMode, setsearch, search }) {
   return (
     <nav className={`border-b px-6 py-4 transition-colors duration-300 ${
       darkMode ? "border-zinc-800 bg-zinc-950" : "border-gray-200 bg-white"
@@ -32,6 +32,17 @@ function Nav({ onToggleForm, isFormVisible, darkMode, toggleDarkMode }) {
           >
             {isFormVisible ? "Close Form" : "Add New Task"}
           </button>
+          
+          <input
+            value={search}
+            onChange={(e) => setsearch(e.target.value)}
+            placeholder="Search tasks..."
+            className={`rounded-xl border px-3 py-2 text-sm transition focus:outline-none focus:ring-2 ${
+              darkMode 
+                ? "border-zinc-700 bg-zinc-800 text-white placeholder-zinc-400 focus:border-blue-500 focus:ring-blue-500/20" 
+                : "border-gray-300 bg-white text-gray-900 placeholder-gray-400 focus:border-blue-500 focus:ring-blue-500/20"
+            }`}
+          />
         </div>
       </div>
     </nav>

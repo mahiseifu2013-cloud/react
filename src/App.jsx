@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Nav from "./assets/components/to do nav";
+import Footer2 from "./assets/components/to do footer"
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -11,6 +12,7 @@ function App() {
     const savedDarkMode = localStorage.getItem("darkMode");
     return savedDarkMode ? JSON.parse(savedDarkMode) : true; // default to true
   });
+  const [search,setsearch] = useState("");
 
   // Load tasks
   useEffect(() => {
@@ -67,7 +69,9 @@ function App() {
     const updatedTasks = tasks.filter((_, i) => i !== index);
     setTasks(updatedTasks);
   };
-
+const filteredTasks = tasks.filter(task =>
+  task.toLowerCase().includes(search.toLowerCase())
+);
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
       darkMode ? "bg-zinc-950 text-white" : "bg-gray-100 text-gray-900"
@@ -77,6 +81,10 @@ function App() {
         isFormVisible={isFormVisible}
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
+        search={search}
+        setsearch={setsearch}
+        tasks={tasks}
+        setTasks={setTasks}
       />
 
       <main className="mx-auto max-w-3xl px-6 py-12">
@@ -139,7 +147,7 @@ function App() {
           </div>
         ) : (
           <ul className="space-y-3">
-            {tasks.map((task, index) => (
+            {filteredTasks.map((task, index) => (
               <li
                 key={index}
                 className={`flex items-center justify-between rounded-2xl border p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
@@ -177,6 +185,7 @@ function App() {
         )}
 
       </main>
+      <Footer2 darkMode={darkMode} />
     </div>
   );
 }
