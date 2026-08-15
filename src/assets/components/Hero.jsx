@@ -1,28 +1,4 @@
-import React, { useState } from "react";
-import Navbar from "./assets/components/Navbar";
-import Footer from "./assets/components/footer";
-
-function Display() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  function toggleDarkMode() {
-    setDarkMode(!darkMode);
-  }
-
-  return (
-    <div
-      className={`min-h-screen transition-colors duration-300 ${
-        darkMode
-          ? "bg-zinc-950 text-white"
-          : "bg-white text-black"
-      }`}
-    >
-      <Navbar
-        darkMode={darkMode}
-        toggleDarkMode={toggleDarkMode}
-      />
-
-      <main className="flex-1 px-8 mt py-16">
+<main className="flex-1 px-8 mt py-16">
         <div className="mx-auto max-w-4xl">
 
           <h1 className="text-5xl font-bold tracking-tight">
@@ -36,7 +12,9 @@ function Display() {
           >
             I do stuff with code.
           </p>
-         
+         <button class="bg-violet-900 text-xl hover:bg-violet-600 rounded focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 active:bg-violet-700 ...">
+  Save changes
+</button>
           <div className="mt-8 flex flex-wrap gap-4">
             <button
               onClick={() =>
@@ -155,10 +133,3 @@ function Display() {
 
         </div>
       </main>
-
-      <Footer darkMode={darkMode} />
-    </div>
-  );
-}
-
-export default Display;
