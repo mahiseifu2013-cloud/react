@@ -9,7 +9,7 @@ function Footer2({ darkMode }) {
         <p className={`text-sm font-medium tracking-wide transition-colors duration-300 ${
           darkMode ? "text-zinc-400" : "text-gray-500"
         }`}>
-          MADE BY MAHI PLC's
+          MADE BY MAHI PLC's react by mahi tailwind by ai
         </p>
       </div>
     </footer>
